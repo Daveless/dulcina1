@@ -91,16 +91,17 @@ body{
     
 }
 
-
-#shopButton p{
-    background-color: black;
-    color: rgb(219, 219, 219);
+.landingButtons{
     padding: 0;
     border:solid;
     border-color: black;
     margin: 0;
     padding:0.2em 1em;
     font-size: 1.1em;
+}
+#shopButton p{
+    background-color: black;
+    color: rgb(219, 219, 219);
 }
 
 #shopButton p{
@@ -108,12 +109,6 @@ body{
 }
 #contactButton p{
     color: rgb(0, 0, 0);
-    padding: 0;
-    border:solid;
-    border-color: black;
-    margin: 0;
-    padding:0.2em 1em;
-    font-size: 1.1em;
 }
 #shopButton{
     margin: 0.5em;
