@@ -6,6 +6,7 @@ body{
     background-image: url(imgs/shape.png);
     background-size: 57%;
     background-repeat: no-repeat;
+    overflow-x:hidden;
 }
 .logo{
     display: grid;
@@ -31,7 +32,6 @@ body{
     align-items: center;
     grid-gap: 17%;
 }
-
 .navLinks a{
     display: inline-block;
     text-decoration: none;
@@ -50,7 +50,7 @@ body{
 .landing{
     height: 70vh;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 54% 46%;
     align-items: center;
 }
 .callToAction{
@@ -66,19 +66,20 @@ body{
     letter-spacing: 2px;
 }
 .imgBox{
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 .landing div img{
     width:100%;
 }
 .magnet-phrase{
-    width:50%;
+    width:60%;
     margin: auto;
     height:20vh;
     text-align: center;
+    letter-spacing: 0.1em;
     font-size: 2em;
-    font-weight: 400;
+    font-weight: 600;
 }
 .callToAction a{
     display: inline-block;
@@ -90,33 +91,31 @@ body{
     text-align:right;
     
 }
-
 .landingButtons{
     padding: 0;
     border:solid;
     border-color: black;
-    margin: 0;
+    margin-top: 20% ;
     padding:0.2em 1em;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 #shopButton{
     background-color: black;
     color: rgb(219, 219, 219);
 }
-
-#shopButton p{
-    margin: 0;
-}
 #contactButton p{
     color: rgb(0, 0, 0);
 }
 #shopButton{
-    margin: 0.5em;
+    margin-right: 0.7em;
 }
 #contactButton{
-    margin: 0.5em;
+    margin-left: 0.7em;
 }
-
-#contactButton p{
-    margin: 0;
+.landingButtons p{
+    margin:0;
+}
+h2{
+    text-align: center;
+    font-size: 2em;
 }
