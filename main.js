@@ -33,6 +33,36 @@ let products = [product1,product2,product3]
 
 let fragment = document.createDocumentFragment();
 
+
+for (const itemproduct of products ){
+    const productContainer = document.createElement("div");
+    productContainer.setAttribute("class","cards");
+    
+    const productImage = document.createElement("img");
+    productImage.setAttribute("src", itemproduct.photo)
+    const productName = document.createElement("p");
+    productName.textContent = itemproduct.name;
+    const productPrize = document.createElement("p");
+    productPrize.textContent = itemproduct.prize;
+
+
+    productContainer.appendChild(productName);
+    productContainer.appendChild(productImage);
+    productContainer.appendChild(productPrize);
+    fragment.appendChild(productContainer);
+}
+
+popularProductsBox.appendChild(fragment)
+
+
+
+
+
+
+
+/*
+
+
 for (const itemproduct of products ){
     var tittles = document.createElement("p");
     tittles.textContent = itemproduct.name;
@@ -55,7 +85,7 @@ for (const cardImages of products){
 
 
 
-
+*/
 
 
 /*for (const itemproduct of products ){
