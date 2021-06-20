@@ -119,3 +119,48 @@ h2{
     text-align: center;
     font-size: 2em;
 }
+.section2{
+    width: 90%;
+    margin:auto;
+}
+.allProducts{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-gap: 3%;
+    align-items: center;
+    text-align: center;
+}
+.cards{
+    background-color: #d9f0ff;
+    border-radius: 0.7em;
+    padding: 1em;
+    box-shadow: -0.5em 0.5em 1em rgba(0, 0, 0, 0.3)
+}
+.cards img{
+    width: 100%;
+    margin: auto;
+    
+}
+.productName{
+    font-size: 1.4em;
+    margin: 0;
+}
+.productPrize{
+    font-size: 1.5em;
+    color: #7d9eb3;
+    margin: 0.1em 0 0.5em;
+}
+.cards a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.buttonContainer{
+    background-color: #25d366;
+    padding: 1em 0;
+    border-radius: 0.5em;
+}
+.buttonContainer p{
+    margin: 0;
+    font-size: 1.1em;
+}
