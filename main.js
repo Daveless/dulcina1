@@ -57,10 +57,8 @@ let products = [product1,product2,product3,
                 product11,product12,product13,
                 product14,product15,product16,
                 product17,product18,product19,
-                product20,product21,product22,
-                product23,product24,product25,
-                product26,product27,product28,
-                product29]
+                product20,product22,
+                product23,product24,product28]
 
 let fragment = document.createDocumentFragment();
 
