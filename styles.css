@@ -4,23 +4,31 @@
 body{
     background-color: #c6e9ff ;
     background-image: url(imgs/shape.png);
-    background-size: 57%;
+    background-size: 50vw;
     background-repeat: no-repeat;
-    overflow-x:hidden;
+    --tittleSize: calc(1em + 3vw);
+    --logoSize: calc(1em + 2vw);
+    --magnetSize: calc(1.1em + 1vw);
+    --buttonSize: calc(0.2em + 1.9vw);
+    --buyButtonSize: calc(0.1em + 1.5vw);
+    --prizeSize: calc(0.8em + 1.5vw);
+    overflow-x: hidden;
 }
 .logo{
+    margin-left: 2vw;
     display: grid;
-    
+    align-items: center;
     grid-template-columns: 20% 80%;
+}
+.principalLogo{
+    margin-left: -1vw;
 }
 .logo-image{
     width: 68%;
-    height: auto;
-    margin: 24% 0 0 20%;
 }
 .logo h1{
-    letter-spacing: 7px;
-    font-size: 3em;
+    letter-spacing: 0.4vw;
+    font-size: var(--logoSize);
     font-weight:600;
 }
 .header-container{
@@ -45,12 +53,15 @@ body{
 .section1{
     width: 100%;
     height: 90vh;
-    margin: auto;   
+    margin: auto;
+    max-width: 100%;
 }
 .landing{
+    width: 100%;
     height: 70vh;
+    
     display: grid;
-    grid-template-columns: 54% 46%;
+    grid-template-columns: 27fr 23fr;
     align-items: center;
 }
 .callToAction{
@@ -61,59 +72,63 @@ body{
     top: -1em;
 }
 .actionPhrase{
-    font-size: 3.3em;
+    font-size: var(--tittleSize);
     font-weight: 600;
     letter-spacing: 2px;
 }
 .imgBox{
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 .landing div img{
     width:100%;
+    max-height: 80vh;
+    margin-top: -6vh;
 }
 .magnet-phrase{
-    width:60%;
-    margin: auto;
+    width:80%;
+    margin: 8vh auto 0;
     height:20vh;
     text-align: center;
     letter-spacing: 0.1em;
-    font-size: 2em;
+    font-size: var(--magnetSize);
     font-weight: 600;
 }
 .callToAction a{
-    display: inline-block;
+    display:block;
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 1.55em;
     font-weight: 600;
     letter-spacing: 1px;
     text-align:right;
-    
-}
-.landingButtons{
     padding: 0;
-    border:solid;
-    border-color: black;
-    margin-top: 20% ;
-    padding:0.2em 1em;
-    font-size: 1.2em;
+    align-items: center;
+    width: 100%;
+    margin: auto;
 }
-#shopButton{
-    background-color: black;
-    color: rgb(219, 219, 219);
+.gridButtons{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: center;
 }
-#contactButton p{
-    color: rgb(0, 0, 0);
+.actionButtons{
+    display: block;
+    background-color: #c6e9ff ;
+    border: solid;
+    width: 78%;
+    font-size: var(--buttonSize);
+    margin: auto;
+    padding: 2% 0;
 }
-#shopButton{
-    margin-right: 0.7em;
+.actionButtons:hover{
+    cursor: pointer;
 }
-#contactButton{
-    margin-left: 0.7em;
-}
-.landingButtons p{
-    margin:0;
+.blackButton{
+    background-color: rgba(0, 0, 0, 0.904);
+    color: #ffffff ;
+    border: black;
 }
 h2{
     text-align: center;
@@ -121,17 +136,23 @@ h2{
 }
 .section2{
     width: 90%;
-    margin:auto;
+    margin: 0 auto 17%;
+}
+.section2 h2{
+    font-size: 2rem;
+    margin: 1rem auto 2rem;
 }
 .allProducts{
     width: 100%;
     display: grid;
-    grid-template-columns: 22% 22% 22% 22%;
-    grid-gap: 3%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 7%;
+    row-gap: 2%;
     align-items: center;
     text-align: center;
 }
 .cards{
+    width: 100%;
     background-color: #d9f0ff;
     border-radius: 0.7em;
     padding: 1em;
@@ -143,11 +164,11 @@ h2{
     
 }
 .productName{
-    font-size: 1.4em;
+    font-size: var(--buttonSize);
     margin: 0;
 }
 .productPrize{
-    font-size: 1.5em;
+    font-size: var(--prizeSize);
     color: #7d9eb3;
     margin: 0.1em 0 0.5em;
 }
@@ -162,5 +183,65 @@ h2{
 }
 .buttonContainer p{
     margin: 0;
-    font-size: 1.1em;
+    font-size: var(--buyButtonSize);
+}
+.footer{
+    display: inline-block;
+}
+@media (max-width: 1262px) {
+    .magnet-phrase{
+        margin: 4vh auto 0;
+    }
+}
+@media (max-width: 900px) {
+    body{
+    --buttonSize: calc(0.4em + 1.9vw);
+    --buyButtonSize: calc(0.3em + 1.5vw);
+
+    --tittleSize: calc(1em + 3vw);
+    --logoSize: calc(1em + 2vw);
+    --magnetSize: calc(1em + 1vw);
+    --prizeSize: calc(0.8em + 1.5vw);
+    }
+    .allProducts{
+        width: 98%;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 9%;
+        row-gap: 1%;
+    }
+}
+@media (max-width: 768px){
+    
+    
+    body{
+    --tittleSize: calc(1.6em + 3vw);
+    --logoSize: calc(1.6em + 2vw);
+    --magnetSize: calc(1.3em + 1vw);
+    --buttonSize: calc(0.9em + 1.9vw);
+    --buyButtonSize: calc(0.6em + 1.5vw);
+    }
+    .landing{
+    grid-template-columns: 1fr;
+    }
+    .imgBox{
+    width: 60%;
+    margin-left: 30%;
+    margin-bottom: 0;
+    max-width: none;
+    grid-row-start: 1;
+    }
+    .callToAction{
+        grid-row-start: 2;
+    }
+    .actionPhrase{
+        margin: 0 auto 0.5em;
+    }
+    .magnet-phrase{
+        width:87%;
+        margin: 4vh auto 0;
+    }
+    .allProducts{
+        grid-template-columns: 1fr 1fr;
+        
+    }
 }

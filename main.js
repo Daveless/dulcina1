@@ -80,8 +80,8 @@ for (const itemproduct of products ){
     productPrize.textContent = `$${itemproduct.prize}`;
     productPrize.setAttribute("class","productPrize");
     const linkButton = document.createElement("a");
-    linkButton.setAttribute("href",`https://${itemproduct.name}.com`);
-
+    linkButton.setAttribute("href",`https://api.whatsapp.com/send?phone=593990868506&text=Quisiera%20comprar%20${itemproduct.name}%0A${itemproduct.prize}%0Alo%20necesito%20para%20el%20d%C3%ADa...%0Ami%20direcci%C3%B3n%20es...`);
+    linkButton.setAttribute("target", "_blank");
     const textButton = document.createElement("p");
     textButton.textContent = "Comprar por Whatsapp";
 
