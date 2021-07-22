@@ -12,6 +12,7 @@ body{
     --buttonSize: calc(0.2rem + 1.9vw);
     --buyButtonSize: calc(0.1em + 1.5vw);
     --prizeSize: calc(0.8em + 1.5vw);
+    --productTittleSize: calc(1em + 1vw);
     overflow-x: hidden;
 }
 .logo{
@@ -166,7 +167,7 @@ h2{
     
 }
 .productName{
-    font-size: var(--buttonSize);
+    font-size: var(--productTittleSize);
     margin: 0;
 }
 .productPrize{
@@ -190,6 +191,7 @@ h2{
 .footer{
     display: inline-block;
 }
+
 @media (max-width: 1262px) {
     .magnet-phrase{
         margin: 4vh auto 0;
@@ -199,11 +201,11 @@ h2{
     body{
     --buttonSize: calc(1rem + 1.9vw);
     --buyButtonSize: calc(0.3em + 1.5vw);
-
     --tittleSize: calc(1em + 3vw);
     --logoSize: calc(1em + 2vw);
     --magnetSize: calc(1em + 1vw);
     --prizeSize: calc(0.8em + 1.5vw);
+    --productTittleSize: calc(1.2em + 1vw);
     }
     
 }
@@ -215,6 +217,7 @@ h2{
     --logoSize: calc(1.6em + 2vw);
     --magnetSize: calc(1.3em + 1vw);
     --buyButtonSize: calc(0.6em + 1.5vw);
+    --productTittleSize: calc(1.1em + 1vw);
     }
     .logo{
         margin-top: -1em;
@@ -274,24 +277,35 @@ h2{
     body{
         margin-top:0.5em;
         --buttonSize: calc(1em + 1.9vw);
-        --buyButtonSize: calc(1px + 1.5vw);    
+        --buyButtonSize: calc(0.5em + 1.5vw);    
         --logoSize: calc(1rem + 2vw);
         --magnetSize: calc(0.9rem + 1vw);
-        --prizeSize: calc(1px + 1.5vw);
+        --prizeSize: calc(1em + 1.5vw);
         }
-
-    .allProducts{
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+@media (max-width: 572px){
+    body{
+        --productTittleSize: calc(2.1em + 1vw);
+        --buyButtonSize: calc(1.4em + 1vw);
+        --prizeSize: calc(2em + 1vw);
+    }
+    .cards{
+        width: 88%;
+        margin: 0 0 4% 1em;
+    }
+    .buttonContainer{
+        padding: 1.5em 0 1.5em;
     }
 }
 @media (max-width: 465px) {
     body{
-        --buttonSize: calc(1.1rem + 1.9vw);
-        --buyButtonSize: calc(1px + 1.5vw);    
+        --buttonSize: calc(1.1rem + 1.9vw);    
         --tittleSize: calc(1.5rem + 3vw);
         --logoSize: calc(0.8rem + 2vw);
         --magnetSize: calc(0.7rem + 1vw);
-        --prizeSize: calc(1px + 1.5vw);
+        --productTittleSize: calc(1.9em + 1vw);
+        --buyButtonSize: calc(1.3em + 1vw);
+        --prizeSize: calc(2em + 1vw);
         }
     .allProducts{
         margin-left: 0.5em;
@@ -299,11 +313,12 @@ h2{
 }
 @media (max-width: 370px) {
     body{
-        --buttonSize: calc(1rem + 1.9vw);
-        --buyButtonSize: calc(1px + 1.5vw);    
+        --buttonSize: calc(1rem + 1.9vw);    
         --tittleSize: calc(1.4rem + 3vw);
         --logoSize: calc(0.7rem + 2vw);
-        --prizeSize: calc(1px + 1.5vw);
+        --productTittleSize: calc(1.8em + 1vw);
+        --buyButtonSize: calc(1.1em + 1vw);
+        --prizeSize: calc(2em + 1vw);
         }
         .allProducts{
             margin-left: 0.3em;
@@ -312,13 +327,15 @@ h2{
 }
 @media (max-width: 330px) {
     body{
-        --buttonSize: calc(0.9rem + 1.9vw);
-        --buyButtonSize: calc(1px + 1.5vw);    
+        --buttonSize: calc(0.9rem + 1.9vw);    
         --tittleSize: calc(1.2rem + 3vw);
         --logoSize: calc(0.6rem + 2vw);
         --magnetSize: calc(0.6rem + 1vw);
-        --prizeSize: calc(1px + 1.5vw);
-        }
+
+        --productTittleSize: calc(1.8em + 1vw);
+        --buyButtonSize: calc(1.1em + 1vw);
+        --prizeSize: calc(2em + 1vw);
+    }
     .allProducts{
         margin-left: 0.1em;
     }
