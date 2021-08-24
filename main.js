@@ -8,31 +8,28 @@ function Product (name, photoUrl, prize,){
     this.prize = prize;
 }
 
-let product1 = new Product("Arreglo jarro con fresas", "imgs/producto1.png", 9.99);
-let product2 = new Product("Arreglo 2", "imgs/producto2.png", 11.59);
-let product3 = new Product("Arreglo 3", "imgs/producto3.png", 9.99);
-let product4 = new Product("Arreglo 4", "imgs/producto4.png", 9.99);
-let product5 = new Product("Arreglo 5", "imgs/producto5.png", 9.99);
-let product6 = new Product("Arreglo 6", "imgs/producto6.png", 9.99);
-let product7 = new Product("Arreglo 7", "imgs/producto7.png", 9.99);
-let product8 = new Product("Arreglo 8", "imgs/producto8.png", 9.99);
-let product9 = new Product("Arreglo 9", "imgs/producto9.png", 9.99);
-let product10 = new Product("Arreglo 10", "imgs/producto10.png", 9.99);
-let product11 = new Product("Arreglo 11", "imgs/producto11.png", 9.99);
-let product12 = new Product("Arreglo 12", "imgs/producto12.png", 9.99);
-let product13 = new Product("Arreglo 13", "imgs/producto13.png", 9.99);
-let product14 = new Product("Arreglo 14", "imgs/producto14.png", 9.99);
-let product15 = new Product("Arreglo 15", "imgs/producto15.png", 9.99);
-let product16 = new Product("Arreglo 16", "imgs/producto16.png", 9.99);
-let product17 = new Product("Arreglo 17", "imgs/producto17.png", 9.99);
-let product18 = new Product("Arreglo 18", "imgs/producto18.png", 9.99);
-let product19 = new Product("Arreglo 19", "imgs/producto19.png", 9.99);
-let product20 = new Product("Arreglo 20", "imgs/producto20.png", 9.99);
-let product21 = new Product("Arreglo 21", "imgs/producto21.png", 9.99);
-let product22 = new Product("Arreglo 22", "imgs/producto22.png", 11.59);
-let product23 = new Product("Arreglo 23", "imgs/producto23.png", 9.99);
+let product1 = new Product("Arreglo jarro con fresas", "imgs/producto1.png", 7.99);
+let product2 = new Product("Arreglo 2", "imgs/producto2.png", 7.99);
+let product3 = new Product("Arreglo 3", "imgs/producto3.png", 12.99);
+let product4 = new Product("Arreglo 4", "imgs/producto4.png", 11.99);
+let product5 = new Product("Arreglo 5", "imgs/producto5.png", 24.99);
+let product6 = new Product("Arreglo 6", "imgs/producto6.png", 14.99);
+let product7 = new Product("Arreglo 7", "imgs/producto7.png", 11.99);
+let product8 = new Product("Arreglo 8", "imgs/producto8.png", 17.99);
+let product9 = new Product("Arreglo 9", "imgs/producto9.png", 11.99);
+let product10 = new Product("Arreglo 10", "imgs/producto10.png", 10.99);
+let product12 = new Product("Arreglo 12", "imgs/producto12.png", 19.99);
+let product13 = new Product("Arreglo 13", "imgs/producto13.png", 7.99);
+let product14 = new Product("Arreglo 14", "imgs/producto14.png", 11.99);
+let product15 = new Product("Arreglo 15", "imgs/producto15.png", 11.99);
+let product17 = new Product("Arreglo 17", "imgs/producto17.png", 11.99);
+let product18 = new Product("Arreglo 18", "imgs/producto18.png", 11.99);
+let product19 = new Product("Arreglo 19", "imgs/producto19.png", 14.99);
+let product20 = new Product("Arreglo 20", "imgs/producto20.png", 19.99);
+let product22 = new Product("Arreglo 22", "imgs/producto22.png", 14.99);
+let product23 = new Product("Arreglo 23", "imgs/producto23.png", 17.99);
 let product24 = new Product("Arreglo 24", "imgs/producto24.png", 9.99);
-let product25 = new Product("Arreglo 25", "imgs/producto25.jpg", 9.99);
+let product25 = new Product("Arreglo 25", "imgs/producto25.jpg", 27.99);
 let product26 = new Product("Arreglo 26", "imgs/producto26.jpg", 9.99);
 let product27 = new Product("Arreglo 27", "imgs/producto27.jpg", 9.99);
 let product28 = new Product("Arreglo 28", "imgs/producto28.jpg", 9.99);
@@ -54,8 +51,8 @@ let product40 = new Product("Arreglo 40", "imgs/producto40.jpg", 9.99);
 let products = [product1,product2,product3,
                 product4,product5,product6,product7,
                 product8,product9,product10,
-                product11,product12,product13,
-                product14,product15,product16,
+                product12,product13,
+                product14,product15,
                 product17,product18,product19,
                 product20,product22,
                 product23,product24,product28]
