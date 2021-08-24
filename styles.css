@@ -301,19 +301,23 @@ h2{
             column-gap: 3rem ;
             margin-left: 1rem;
         }
-    
-}
-@media (max-width: 465px) {
-        .buttonContainer{
-            padding: 0.5em 0 0.5em;
-        }    
-}
-@media (max-width: 370px) {
-
-}
-@media (max-width: 330px) {
     .allProducts{
-        margin-left: 0.3rem;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0.5em;
     }
 }
+@media (max-width: 465px) {
+    .allProducts{
+        grid-template-columns: 1fr;
+        width: 65%;
+        margin: auto;
+    }
+}
+@media (max-width: 370px) {
+    .allProducts{
+        grid-template-columns: 1fr;
+        width: 70%;
+        margin-left: 1.5em;
+    }
+
 
