@@ -306,18 +306,28 @@ h2{
         margin-left: 0.5em;
     }
 }
-@media (max-width: 465px) {
+@media (max-width: 450px) {
+    body{
+        --buyButtonSize: 1em;
+        --prizeSize: 1.2em;
+        --productTittleSize: 1.3em;
+        }
+    .allProducts{
+        margin: auto;
+        column-gap: 2.2em;
+        width: 90%;
+    }
+    .cards{
+        width: 90%;
+        margin-left: -0.3em;
+    }
+    
+}
+
+@media (max-width: 340px) {
     .allProducts{
         grid-template-columns: 1fr;
-        width: 65%;
-        margin: auto;
+        width: 80%;
     }
 }
-@media (max-width: 370px) {
-    .allProducts{
-        grid-template-columns: 1fr;
-        width: 70%;
-        margin-left: 1.5em;
-    }
-
 
